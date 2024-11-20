@@ -202,6 +202,16 @@ form button:hover {
     background-color: #034f64;
 }
 
+.error {
+    color: #d9534f;
+    font-size: 0.875rem;
+    margin-top: 4px;
+    display: block;
+}
+input:invalid, select:invalid {
+    border: 2px solid #d9534f;
+}
+
 /* Footer */
 footer {
     background-color: #333;
