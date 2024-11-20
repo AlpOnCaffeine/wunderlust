@@ -15,7 +15,7 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #00bfd8;
+    background-color: #00c1c7;
     color: white;
     text-align: center;
     padding: 20px 10px;
@@ -33,7 +33,7 @@ header img {
 
 /* Navigation */
 nav {
-    background-color: #007b9e;
+    background-color: #034f64;
 }
 
 nav ul {
@@ -66,7 +66,7 @@ main {
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: #007b9e;
+    background-color: #034f64;
     color: white;
     padding: 10px 15px;
     text-decoration: none;
@@ -92,7 +92,7 @@ section {
 h2 {
     font-size: 2rem;
     margin-bottom: 15px;
-    color: #007b9e;
+    color: #034f64;
 }
 
 p {
@@ -139,13 +139,13 @@ figure figcaption {
 
 .trip-option svg {
     margin-right: 20px;
-    fill: #00bfd8;
+    fill: #00c1c7;
     width: 50px;
     height: 50px;
 }
 
 .trip-option a {
-    color: #007b9e;
+    color: #034f64;
     text-decoration: none;
     font-weight: bold;
 }
@@ -161,7 +161,7 @@ figure figcaption {
 
 #testimonials h3 {
     font-size: 1.5rem;
-    color: #007b9e;
+    color: #034f64;
 }
 
 blockquote {
@@ -201,7 +201,7 @@ form button {
 }
 
 form button {
-    background-color: #00bfd8;
+    background-color: #00c1c7;
     color: white;
     border: none;
     cursor: pointer;
@@ -209,7 +209,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #007b9e;
+    background-color: #034f64;
 }
 
 /* Footer */
@@ -233,7 +233,7 @@ footer ul li {
 }
 
 footer ul li a {
-    color: #00bfd8;
+    color: #00c1c7;
     text-decoration: none;
 }
 
