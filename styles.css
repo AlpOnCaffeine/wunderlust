@@ -62,7 +62,28 @@ nav ul li a:hover {
 main {
     padding: 20px;
 }
+.skip-link {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #007b9e;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 1000;
+    clip: rect(0 0 0 0); /* Hides the link visually */
+    clip-path: inset(50%); /* For newer browsers */
+    overflow: hidden;
+    white-space: nowrap;
+}
 
+.skip-link:focus {
+    clip: auto; /* Makes the link visible when focused */
+    clip-path: none;
+    position: absolute;
+}
 /* Section Styling */
 section {
     margin-bottom: 40px;
