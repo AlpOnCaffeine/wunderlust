@@ -70,12 +70,80 @@
         <section id="contact-us">
             <h2>Contact Us</h2>
             <form action="#" method="post">
-                <fieldset>
-                    <legend>Contact Information</legend>
+                <!-- First Name -->
+                <div>
                     <label for="first-name">First Name:</label>
                     <input type="text" id="first-name" name="first-name" placeholder="Enter first name" required>
+                </div>
+        
+                <!-- Last Name -->
+                <div>
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Enter last name" required>
+                </div>
+        
+                <!-- Contact Method -->
+                <fieldset>
+                    <legend>Contact Method:</legend>
+                    <div>
+                        <input type="radio" id="contact-email" name="contact-method" value="email" required>
+                        <label for="contact-email">Email</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="contact-text" name="contact-method" value="text">
+                        <label for="contact-text">Text</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                        <label for="contact-phone">Phone</label>
+                    </div>
                 </fieldset>
-                <button type="submit">Submit</button>
+        
+                <!-- Email Address -->
+                <div>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Email">
+                </div>
+        
+                <!-- Phone Number -->
+                <div>
+                    <label for="phone-number">Phone Number:</label>
+                    <input type="tel" id="phone-number" name="phone-number" placeholder="Enter telephone number">
+                </div>
+        
+                <!-- Destination -->
+                <div>
+                    <label for="destination">Destination:</label>
+                    <select id="destination" name="destination" required>
+                        <option value="" disabled selected>Select your destination</option>
+                        <option value="barcelona">Barcelona</option>
+                        <option value="granada">Granada</option>
+                        <option value="ibiza">Ibiza</option>
+                        <option value="madrid">Madrid</option>
+                        <option value="majorca">Majorca</option>
+                        <option value="seville">Seville</option>
+                        <option value="tenerife">Tenerife</option>
+                        <option value="valencia">Valencia</option>
+                    </select>
+                </div>
+        
+                <!-- Travel Time -->
+                <div>
+                    <label for="travel-time">Travel Time:</label>
+                    <select id="travel-time" name="travel-time" required>
+                        <option value="" disabled selected>Select your travel time</option>
+                        <option value="fall">Fall</option>
+                        <option value="winter">Winter</option>
+                        <option value="spring">Spring</option>
+                        <option value="summer">Summer</option>
+                        <option value="flexible">Flexible</option>
+                    </select>
+                </div>
+        
+                <!-- Submit Button -->
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
             </form>
         </section>
     </main>
