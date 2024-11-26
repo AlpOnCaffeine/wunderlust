@@ -196,7 +196,7 @@ section img {
 #intro img {
     width: 100%; /* Images are responsive */
 }
-/*Plan your trip section styles*/
+/* Plan your trip section styles */
 #plan {
     background-color: #F6D64A; /* Yellow background */
     padding: 20px; /* Space around the entire section */
@@ -365,7 +365,7 @@ section img {
     text-align: center; /* Center-align text */
 }
 
-/*Contact form Styles*/
+/* Contact form Styles */
 #contact form {
     padding: 20px;
     color: #000; /* Black text for headings */
@@ -489,7 +489,7 @@ section img {
     background-color: #6d1d86; /* Darker purple on hover */
 }
 
-/*Styles for the footer*/
+/* Styles for the footer */
 footer{
     text-align: center;
     padding: 20px;
@@ -518,4 +518,7 @@ footer a:hover {
     text-decoration: underline; /* Add underline on hover */
 }
 
+
 }
+
+/* Ensure tablet-specific layout */
