@@ -85,7 +85,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(to bottom, #5ec7da, white); /* Gradient for the header */
+    background: linear-gradient(to bottom, #55BCD5, white); /* Gradient for the header */
     padding: 20px 10px; /* Add spacing inside the header */
     position: relative; /* Allows for absolutely positioned child elements */
     width: 100%; /* Ensure it spans the full width */
@@ -116,9 +116,9 @@ header p{
     
 #menu-toggle label {
     display: inline-block;
-    background-color: #ffd700; /* Yellow button */
+    background-color: #F6D64A; /* Yellow button */
     color: #000;
-    padding: 10px 15px;
+    padding: 10px 10px;
     border-radius: 5px;
     font-weight: bold;
     font-size: 1rem;
@@ -130,7 +130,7 @@ header p{
     padding: 0;
     margin: 0;
     display: none; /* Hide menu initially */
-    background-color: #5ec7da; /* Light blue */
+    background-color: #55BCD5; /* Light blue */
     position: absolute;
     top: 50px; /* Position below the header */
     right: 10px; /* Align with the menu button */
@@ -198,7 +198,7 @@ section img {
 }
 /*Plan your trip section styles*/
 #plan {
-    background-color: #ffd700; /* Yellow background */
+    background-color: #F6D64A; /* Yellow background */
     padding: 20px; /* Space around the entire section */
     text-align: center; /* Center the heading and icons */
 }
@@ -222,16 +222,16 @@ section img {
 
 /* Style for each individual section */
 #plan section {
-    background-color: #5ec7da;
+    background-color: #55BCD5;
     border: 3px solid #fff;
     border-radius: 10px;
     padding: 20px; 
     width: 80%; 
-    height: 150px; 
+    height: 180px; 
     display: flex;
     flex-direction: column; /* Stack the icon and text */
     align-items: center; /* Center content horizontally */
-    justify-content: center; /* Center content vertically */
+    justify-content: center; 
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
@@ -241,6 +241,7 @@ section img {
     color: #000; /* Black text */
     text-align: center; /* Center the text */
     font-size: 1.5rem;
+    margin-top: 5px;
     font-weight: bold;
 }
 
@@ -308,6 +309,60 @@ section img {
     color: #333; /* Darker gray for quotes */
     font-style: italic; /* Italicize quotes */
     line-height: 1.5; /* Add spacing for readability */
+}
+
+/* Styles for the About section*/
+#about {
+    background-color: #499BD2;
+    padding: 30px; 
+    border-radius: 10px; 
+    color: #000; 
+}
+
+#about h3 {
+    font-size: 2rem; 
+    font-weight: bold; 
+    margin-bottom: 20px; 
+    text-align: left;
+}
+
+/* Container for the inner sections */
+#about div {
+    display: grid; /* Use a grid layout for the items */
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between the grid items */
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+/* Individual sections */
+#about section {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+}
+
+/* Icons styling */
+#about section img {
+    width: 70%; /* Fixed size for icons */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space below the icon */
+}
+
+/* Title styling inside sections */
+#about section h4 {
+    font-size: 1.2rem; /* Adjust font size for section titles */
+    font-weight: bold; /* Make titles bold */
+    color: #000; /* Black text */
+    margin: 5px 0; /* Space around the title */
+}
+
+/* Paragraph styling inside sections */
+#about section p {
+    font-size: 0.9rem; /* Smaller font size for details */
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center-align text */
 }
 
 /*Contact form Styles*/
