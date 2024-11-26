@@ -54,145 +54,225 @@ table {
         margin: 0;
         font-family: 'Montserrat', sans-serif;
     }
+/* Skip Link Styling */
+#skip {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+}
 
-    header {
-        display: flex;
-        justify-content: space-between; /* Align logo and menu */
-        align-items: center;
-        background-color: #5ec7da; /* Light blue background */
-        padding: 10px 20px;
-    }
-    
-    h1{
-        text-align: left;
-        font-weight: 600;
-        font-size: 1.5rem;
-        color: #000;
-    }
-    
-    header p{
-        margin-top: 5px; /* Add spacing between the heading and the paragraph */
-        font-size: 1.2rem; /* Adjust font size */
-        color: #000; /* Black text */
-        text-align: center; /* Center the text */
-        line-height: 1.5; /* Improve readability */
+#skip:focus {
+    left: 0;
+    top: 0;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    z-index: 1000;
+}
+/* Logo Styling */
+#logo{
+    position:absolute;
+    top: 10px;
+    left: 10px;
+}
 
-    }
-    /* Logo Styling */
-    #logo img {
-        width: 100%; /* Adjust logo size */
-        height: auto;
-    }
-    
-    
-    #menu-toggle {
-        /*width: 100%;
-        text-align: center;
-        top: 10px;
-        right: 20px;*/
-        position: relative;
-    }
-    
-    #menu-toggle label {
-        display: block;
-        background-color: #ffd700; /* Yellow button background */
-        color: #000; /* Black text */
-        padding: 10px 15px;
-        border-radius: 5px;
-        font-weight: bold;
-        cursor: pointer; 
-        font-size: 1.2rem;
-    }
-    
-    #menu-toggle ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: none; /* Hide menu initially */
-        background-color: #5ec7da; /* Light blue */
-        position: absolute;
-        top: 60px; /* Position below the header */
-        right: 20px; /* Align with the menu button */
-        width: 150px;
-        border: 1px solid #000; /* Add border if desired */
-        z-index: 1000; /* Ensure it appears above other elements */
-    }
-    
-    #menu-toggle input[type="checkbox"]:checked + label + ul {
-        display: block; /* Show menu when checkbox is checked */
-    }
-    
-    #menu-toggle ul li {
-        padding: 10px 20px;
-        border-bottom: 1px solid #000; /* Black separator */
-        text-align: center;
-    }
-    
-    #menu-toggle ul li:last-child {
-        border-bottom: none; /* Remove border for last item */
-    }
-    
-    #menu-toggle ul li a {
-        color: #000; /* Black text */
-        text-decoration: none;
-        font-weight: bold;
-    }
-    
-    #menu-toggle ul li a:hover {
-        text-decoration: underline;
-    }
-    
-    main{
-        padding: 20px;
-    }
+#logo img {
+    width: 100%; /* Adjust logo size */
+    height: auto;
+}
 
-    #logo img {
-        width: 100px; /* Adjust logo size */
-    }
-
-    #intro img {
-        width: 100%; /* Images are responsive */
-    }
-
-    #plan section {
-        text-align: center;
-        margin: 10px 0;
-    }
-
-
-
-    #plan img {
-        width: 50px; /* Icon size adjustment */
-        margin-bottom: 5px;
-    }
-
-    #testimonials, #about {
-        text-align: center;
-    }
-
-    #contact form {
-        padding: 10px;
-    }
-
-    #contact label {
-        display: block;
-        margin: 10px 0 5px;
-    }
-
-    input, select {
-        width: 100%;
-        margin-bottom: 15px;
-        padding: 10px;
-    }
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #5ec7da, white); /* Gradient for the header */
+    padding: 20px 10px; /* Add spacing inside the header */
+    position: relative; /* Allows for absolutely positioned child elements */
+    width: 100%; /* Ensure it spans the full width */
+    box-sizing: border-box; /* Ensure padding doesn’t affect width calculation */
+}
     
-    input[type="submit"] {
-        background-color: #8a4baf; /* Purple submit button */
-        color: white;
-        border: none;
-        padding: 10px;
-        font-size: 1rem;
-        font-weight: bold;
-        cursor: pointer;
-    }
+h1{
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #000;
+}
+    
+header p{
+    margin-top: 10px; /* Add spacing between the heading and the paragraph */
+    font-size: 1.2rem; /* Adjust font size */
+    color: #000; /* Black text */
+    text-align: center; /* Center the text */
+    line-height: 1.5; /* Improve readability */
+    max-width: 40%;
+}
+  
+#menu-toggle{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+    
+#menu-toggle label {
+    display: inline-block;
+    background-color: #ffd700; /* Yellow button */
+    color: #000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+    
+#menu-toggle ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Hide menu initially */
+    background-color: #5ec7da; /* Light blue */
+    position: absolute;
+    top: 50px; /* Position below the header */
+    right: 10px; /* Align with the menu button */
+    border: 1px solid #000; 
+    box-shadow: 0px 2px 5px (0, 0, 0, 0.1);
+    z-index: 1000; 
+}
+    
+#menu-toggle input[type="checkbox"]:checked + label + ul {
+    display: block; /* Show menu when checkbox is checked */
+}
+    
+#menu-toggle ul li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #000; /* Black separator */
+    text-align: center;
+}
+    
+#menu-toggle ul li:last-child {
+    border-bottom: none; /* Remove border for last item */
+}
+    
+#menu-toggle ul li a {
+    color: #000; /* Black text */
+    text-decoration: none;
+    font-weight: bold;
+}
+    
+#menu-toggle ul li a:hover {
+    text-decoration: underline;
+}
+    
+main{
+    padding: 20px;
+}
+/* Style for the h2 inside #intro */
+#intro h2 {
+    font-size: 2.5rem; /* Large, bold heading */
+    text-align: left; /* Align text to the left */
+    margin-bottom: 10px; /* Space below the heading */
+    padding: 10px; /* Add padding around the text */
+}
 
+/* Style for the paragraph inside #intro */
+#intro p {
+    font-size: 1.1rem; 
+    line-height: 1.8; 
+    text-align: justify; 
+    margin-top: 10px; /* Add spacing above the paragraph */
+    padding: 10px;
+}
+section img {
+    width: 50px; /* Adjust icon size */
+    height: 50px; /* Set a fixed height for consistency */
+    margin: 10px auto; /* Center the icon with some spacing */
+    display: block; /* Block display for better alignment */
+}
+
+#logo img {
+    width: 100px; /* Adjust logo size */
+}
+
+#intro img {
+    width: 100%; /* Images are responsive */
+}
+/*Plan your trip section styles*/
+#plan {
+    background-color: #ffd700; /* Yellow background */
+    padding: 20px; /* Space around the entire section */
+    text-align: center; /* Center the heading and icons */
+}
+
+/* Style for the section heading */
+#plan h3 {
+    font-size: 2rem;
+    margin-bottom: 20px; /* Space below the heading */
+    color: #000; /* Black text */
+    text-align: left; /* Align heading to the left */
+    padding-left: 10px; /* Add left padding for alignment */
+}
+
+/* Styling the inner sections (icons and text) */
+#plan div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Space between items */
+}
+
+/* Style for each individual section */
+#plan section {
+    background-color: #5ec7da;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    padding: 20px; 
+    width: 80%; 
+    height: 150px; 
+    display: flex;
+    flex-direction: column; /* Stack the icon and text */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Style for the h4 inside each section */
+#plan section h4 {
+    margin-top: 10px; /* Space above the title */
+    color: #000; /* Black text */
+    text-align: center; /* Center the text */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Style for the icons (images) */
+#plan section img {
+    width: 70%; /* Fixed size for icons */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/*Contact form Styles*/
+#contact form {
+    padding: 10px;
+}
+
+#contact label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+    
+input[type="submit"] {
+    background-color: #8a4baf; /* Purple submit button */
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
 }
