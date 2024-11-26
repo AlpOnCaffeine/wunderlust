@@ -249,6 +249,66 @@ section img {
     width: 70%; /* Fixed size for icons */
     height: auto; /* Maintain aspect ratio */
 }
+/* Styles for the Testimonials section*/
+#testimonials {
+    text-align: center; /* Center align the heading */
+    padding: 20px; /* Add padding around the entire section */
+}
+
+#testimonials h3 {
+    font-size: 2rem; /* Larger font size for the heading */
+    margin-bottom: 30px; /* Add space below the heading */
+    color: #000; /* Black text for the heading */
+}
+
+/* Container for the individual testimonials */
+#testimonials div {
+    display: flex;
+    flex-direction: column; /* Stack testimonials vertically */
+    align-items: center; /* Center content horizontally */
+    gap: 30px; /* Space between each testimonial */
+}
+
+/* Individual Testimonial Sections */
+#testimonials section {
+    text-align: center; /* Center align content inside each testimonial */
+    width: 100%; /* Full width to center the content */
+    max-width: 300px; /* Limit width for each testimonial */
+    margin: 0 auto; /* Center the testimonials horizontally */
+}
+
+/* Style for Testimonial Images */
+#testimonials section img {
+    width: 150px; /* Circular image size */
+    height: 150px; /* Keep it square for circular cropping */
+    object-fit: cover; /* Ensure the image fills the circle */
+    border-radius: 50%; /* Make the image circular */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    margin-bottom: 15px; /* Space below the image */
+}
+
+/* Name Styling */
+#testimonials section h4 {
+    font-size: 1.2rem; /* Slightly larger font for names */
+    font-weight: bold; /* Bold text for emphasis */
+    color: #000; /* Black text */
+    margin-bottom: 5px; /* Space below the name */
+}
+
+/* Location Styling */
+#testimonials section p {
+    font-size: 1rem; /* Regular font size for locations */
+    color: #666; /* Gray text for subtleness */
+    margin-bottom: 10px; /* Space below the location */
+}
+
+/* Quote Styling */
+#testimonials section q {
+    font-size: 1rem; /* Regular font size for quotes */
+    color: #333; /* Darker gray for quotes */
+    font-style: italic; /* Italicize quotes */
+    line-height: 1.5; /* Add spacing for readability */
+}
 
 /*Contact form Styles*/
 #contact form {
