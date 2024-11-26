@@ -367,27 +367,155 @@ section img {
 
 /*Contact form Styles*/
 #contact form {
-    padding: 10px;
+    padding: 20px;
+    color: #000; /* Black text for headings */
+    font-family: 'Montserrat', sans-serif; /* Ensure consistent font */
 }
 
+#contact h3 {
+    font-size: 2rem; /* Large font size for the heading */
+    margin-bottom: 10px; /* Add spacing below the heading */
+    text-align: left; /* Align heading to the left */
+}
+
+#contact .form-required {
+    font-size: 0.9rem;
+    color: #000000; 
+}
+/* Style for labels */
 #contact label {
-    display: block;
-    margin: 10px 0 5px;
+    display: block; /* Stack labels above inputs */
+    margin-top: 15px; /* Space above each label */
+    margin-bottom: 5px; /* Space below each label */
+    font-weight: bold; /* Emphasize labels */
+    color: #000; /* Black text */
 }
 
-input, select {
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 10px;
+/* Style for input fields */
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact select {
+    width: 100%; /* Full width input fields */
+    padding: 10px; /* Space inside the inputs */
+    margin-bottom: 15px; /* Space below inputs */
+    border: 2px solid #9B26B0; /* Purple border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Font size for inputs */
+    color: #000; /* Black text */
 }
-    
-input[type="submit"] {
-    background-color: #8a4baf; /* Purple submit button */
-    color: white;
-    border: none;
-    padding: 10px;
+
+/* Placeholder styling */
+#contact input::placeholder {
+    color: #aaa; /* Light gray placeholder text */
+    font-style: italic;
+}
+
+/* Fieldset styling */
+#contact fieldset {
+    border: none; /* Remove default fieldset border */
+    margin: 20px 0; /* Add spacing around the fieldset */
+    padding: 0;
+}
+
+#contact legend {
     font-size: 1rem;
     font-weight: bold;
+    color: #000; /* Black text */
+    margin-bottom: 10px; /* Space below the legend */
+}
+
+/* Radio button styling */
+#contact .radio-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Space between radio inputs */
+}
+
+#contact .radio-input input[type="radio"] {
+    appearance: none; /* Remove default radio styling */
+    width: 20px;
+    height: 20px;
+    border: 2px solid #9B26B0; /* Purple border */
+    border-radius: 50%; /* Circular radio buttons */
+    margin-right: 10px; /* Space to the right of the button */
     cursor: pointer;
 }
+
+#contact .radio-input input[type="radio"]:checked {
+    background-color: #9B26B0; /* Purple fill when checked */
+    border-color: #9B26B0; /* Purple border when checked */
+}
+
+#contact .radio-input .radio-label {
+    font-size: 1rem;
+    color: #000; /* Black text for radio labels */
+}
+
+/* Select dropdown styling */
+#contact .custom-select select {
+    appearance: none; /* Remove default dropdown styling */
+    background: #fff; /* White background */
+    border: 2px solid #9B26B0; /* Purple border */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    color: #000; /* Black text */
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+#contact .custom-select select:focus {
+    border-color: #6d1d86; /* Darker purple on focus */
+    outline: none;
+}
+
+/* Submit button styling */
+#contact input[type="submit"] {
+    background-color: #9B26B0; /* Purple background */
+    color: #fff; /* White text */
+    border: none; /* Remove border */
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase; /* Capitalize text */
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    width: 100%; /* Full width button */
+}
+
+#contact input[type="submit"]:hover {
+    background-color: #6d1d86; /* Darker purple on hover */
+}
+
+/*Styles for the footer*/
+footer{
+    text-align: center;
+    padding: 20px;
+
+}
+
+/* Paragraph inside footer */
+footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 0.9rem; /* Adjust font size */
+    color: #000; /* Black text */
+    margin-bottom: 10px; /* Space below copyright text */
+}
+
+/* Links inside footer */
+footer a {
+    display: block; /* Stack links vertically */
+    color: #000; /* Black text for links */
+    text-decoration: none; /* Remove underline */
+    font-size: 0.9rem; /* Adjust font size */
+    margin: 5px 0; /* Space between links */
+}
+
+/* Hover effect for links */
+footer a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
 }
