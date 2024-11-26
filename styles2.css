@@ -47,69 +47,103 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* General reset for mobile */
-body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-}
 
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #000; /* Black for the menu header */
-    color: #fff; /* White text */
-}
-
-#menu-toggle {
-    width: 100%;
-    text-align: center;
-    background-color: #000; /* Black background */
-    color: white;
-}
-
-#menu-toggle label {
-    display: block;
-    padding: 10px 0;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
-#menu-toggle ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: none; /* Hide menu initially */
-    background-color: #5ec7da; /* Light blue */
-}
-
-#menu-toggle input[type="checkbox"]:checked + label + ul {
-    display: block; /* Show menu when checkbox is checked */
-}
-
-#menu-toggle ul li {
-    padding: 15px 0;
-    border-bottom: 1px solid #000; /* Black separator */
-    text-align: center;
-}
-
-#menu-toggle ul li:last-child {
-    border-bottom: none; /* Remove border for last item */
-}
-
-#menu-toggle ul li a {
-    color: #000; /* Black text */
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#menu-toggle ul li a:hover {
-    text-decoration: underline;
-}
 /* Ensure mobile-specific layout */
 @media (max-width: 768px) {
+    body {
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+    }
+
     header {
-        padding: 10px;
+        display: flex;
+        justify-content: space-between; /* Align logo and menu */
+        align-items: center;
+        background-color: #5ec7da; /* Light blue background */
+        padding: 10px 20px;
+    }
+    
+    h1{
+        text-align: left;
+        font-weight: 600;
+        font-size: 1.5rem;
+        color: #000;
+    }
+    
+    header p{
+        margin-top: 5px; /* Add spacing between the heading and the paragraph */
+        font-size: 1.2rem; /* Adjust font size */
+        color: #000; /* Black text */
+        text-align: center; /* Center the text */
+        line-height: 1.5; /* Improve readability */
+
+    }
+    /* Logo Styling */
+    #logo img {
+        width: 100%; /* Adjust logo size */
+        height: auto;
+    }
+    
+    
+    #menu-toggle {
+        /*width: 100%;
+        text-align: center;
+        top: 10px;
+        right: 20px;*/
+        position: relative;
+    }
+    
+    #menu-toggle label {
+        display: block;
+        background-color: #ffd700; /* Yellow button background */
+        color: #000; /* Black text */
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer; 
+        font-size: 1.2rem;
+    }
+    
+    #menu-toggle ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: none; /* Hide menu initially */
+        background-color: #5ec7da; /* Light blue */
+        position: absolute;
+        top: 60px; /* Position below the header */
+        right: 20px; /* Align with the menu button */
+        width: 150px;
+        border: 1px solid #000; /* Add border if desired */
+        z-index: 1000; /* Ensure it appears above other elements */
+    }
+    
+    #menu-toggle input[type="checkbox"]:checked + label + ul {
+        display: block; /* Show menu when checkbox is checked */
+    }
+    
+    #menu-toggle ul li {
+        padding: 10px 20px;
+        border-bottom: 1px solid #000; /* Black separator */
+        text-align: center;
+    }
+    
+    #menu-toggle ul li:last-child {
+        border-bottom: none; /* Remove border for last item */
+    }
+    
+    #menu-toggle ul li a {
+        color: #000; /* Black text */
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    #menu-toggle ul li a:hover {
+        text-decoration: underline;
+    }
+    
+    main{
+        padding: 20px;
     }
 
     #logo img {
@@ -124,6 +158,8 @@ header {
         text-align: center;
         margin: 10px 0;
     }
+
+
 
     #plan img {
         width: 50px; /* Icon size adjustment */
@@ -158,4 +194,5 @@ header {
         font-weight: bold;
         cursor: pointer;
     }
+
 }
