@@ -522,3 +522,97 @@ footer a:hover {
 }
 
 /* Ensure tablet-specific layout */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        margin: 0;
+        font-family: 'Montserrat', sans-serif; /* Ensure consistent font */
+        background: linear-gradient(to bottom, #55BCD5, white); /* Background gradient */
+    }
+    
+    /* Skip Link Styling */
+    #skip {
+        position: absolute;
+        left: -9999px;
+        top: -9999px;
+    }
+    
+    #skip:focus {
+        left: 0;
+        top: 0;
+        background: #000;
+        color: #fff;
+        padding: 10px;
+        z-index: 1000;
+    }
+    
+    /* Header Styling */
+    header {
+        text-align: center; /* Center align text */
+        padding: 20px; /* Add padding around header */
+        background: linear-gradient(to bottom, #55BCD5, white); /* Header gradient */
+    }
+    
+    /* Logo Styling */
+    #logo img {
+        width: 250px; /* Fixed size for the logo */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 10px; /* Add space below the logo */
+    }
+    
+    /* Heading and Subheading Styling */
+    header h1 {
+        font-size: 2rem; /* Adjust font size for heading */
+        font-weight: bold; /* Make heading bold */
+        margin: 10px 0; /* Space around the heading */
+        color: #000; /* Black text */
+    }
+    
+    header p {
+        font-size: 1.1rem; /* Adjust font size for subheading */
+        margin: 0 0 20px 0; /* Space below the subheading */
+        color: #000; /* Black text */
+    }
+    
+    /* Navigation Styling */
+    nav {
+        display: flex;
+        justify-content: center; /* Center navigation items */
+        gap: 20px; /* Space between navigation items */
+    }
+    
+    nav ul {
+        list-style: none; /* Remove bullets */
+        display: flex; /* Display navigation as a row */
+        padding: 0;
+        margin: 0;
+    }
+    
+    nav ul li {
+        margin: 0; /* Remove margin */
+    }
+    
+    nav ul li a {
+        display: inline-block; /* Ensure proper spacing */
+        padding: 10px 20px; /* Add padding around links */
+        font-size: 1rem; /* Adjust font size */
+        text-decoration: none; /* Remove underline */
+        color: #000; /* Black text */
+        background-color: #fff; /* White background for buttons */
+        border: 2px solid transparent; /* Border for hover effect */
+        border-radius: 5px; /* Rounded corners for buttons */
+        transition: all 0.3s ease; /* Smooth hover effect */
+    }
+    
+    /* Active link styling */
+    nav ul li.active a {
+        background-color: #F6D64A; /* Highlight active link with yellow */
+        color: #000; /* Black text */
+        font-weight: bold; /* Make active link bold */
+    }
+    
+    /* Hover effect for links */
+    nav ul li a:hover {
+        border: 2px solid #F6D64A; /* Add yellow border on hover */
+    }
+
+}
