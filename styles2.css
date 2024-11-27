@@ -680,5 +680,68 @@ footer a:hover {
 #img-grid picture {
     grid-column: span 2; /* Make the bottom image span both columns */
 }
+/* Plan Your Trip Section */
+#plan {
+    background-color: #F6D64A; /* Yellow background */
+    text-align: left; /* Center-align text */
+    width: 100%;
+}
 
+#plan h3 {
+    font-size: 1.8rem;
+    margin: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    color: #000; /* Black text */
+
+}
+
+/* Grid layout for the icons */
+#plan div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* Space between grid items */
+    justify-items: center; /* Center grid items horizontally */
+    align-items: center; /* Center grid items vertically */
+    margin: 0 auto; /* Center the grid in the section */
+    max-width: 600px;
+    height: 500px;
+}
+
+/* Individual Sections for each grid item */
+#plan section {
+    background-color: #55BCD5; /* Blue background */
+    border: #fff solid 3px;
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Space inside the sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effects */
+    height: auto;
+    width: 200px; /* adjust the size of the icons background shown in light blue*/
+    display: grid; /* Enable grid layout within each section */
+    grid-template-rows: auto auto; /* Define rows for the img and h4 */
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    gap: 10px; /* Add spacing between img and h4 */
+}
+
+#plan section:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Icons inside the sections */
+#plan section img {
+    height: 80px; 
+    /*display: grid;*/
+    
+}
+
+/* Section Titles */
+#plan section h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000; /* Black text */
+    margin: 0; /* Remove default margin */
+}
 }
