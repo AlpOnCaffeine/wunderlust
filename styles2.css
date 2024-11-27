@@ -857,4 +857,167 @@ footer a:hover {
     color: #000; /* Black text for descriptions */
     margin: 0; /* Remove default margin */
 }
+/* Styles for the form */
+/* Contact Section */
+#contact {
+    background-color: #fff; /* White background */
+    padding: 40px; /* Add padding */
+    max-width: 600px; /* Restrict width */
+    margin: 0 auto; /* Center align the section */
+    font-family: 'Montserrat', sans-serif;
+    color: #000; /* Black text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for form */
+}
+
+/* Heading Styling */
+#contact h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+#contact .form-required {
+    font-size: 1rem;
+    color: #000000; /* Purple */
+    font-weight: normal;
+}
+
+/* Input Label Styling */
+#contact label {
+    display: block;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #000;
+}
+
+#contact .required {
+    color: #9B26B0; /* Purple for required asterisk */
+}
+
+/* Input Fields */
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #9B26B0; /* Purple border */
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #000; /* Black text */
+    box-sizing: border-box;
+}
+
+#contact input[type="text"]::placeholder,
+#contact input[type="email"]::placeholder,
+#contact input[type="tel"]::placeholder {
+    color: #9B26B0; /* Purple placeholders */
+}
+
+/* Fieldset Styling */
+#contact fieldset {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center-align items */
+    gap: 20px; /* space between radios */
+    justify-content: space-between; /* Add spacing between radio buttons */
+    margin: 20px 0;
+    padding: 0;
+    border: none;
+}
+
+/* Radio Buttons */
+.radio-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.radio-input input[type="radio"] {
+    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+    accent-color: #9B26B0; /* Purple accent for radio buttons */
+}
+
+.radio-label {
+    font-size: 1rem;
+    color: #000; /* Black text */
+    padding: 80px;
+    
+}
+
+/* Custom Select Styling */
+.custom-select {
+    position: relative;
+}
+
+
+.custom-select select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid #9B26B0; /* Purple border */
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1rem;
+    color: #000;
+}
+
+.custom-select span.focus {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 1.2rem;
+    color: #9B26B0; /* Purple dropdown arrow */
+}
+
+/* Submit Button */
+#contact input[type="submit"] {
+    background-color: #9B26B0; /* Purple background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 12px;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact input[type="submit"]:hover {
+    background-color: #7a1d8d; /* Darker purple on hover */
+}
+/*Styles for the footer*/
+footer {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Align items vertically */
+    gap: 20px; /* Add space between the elements */
+    padding: 10px 20px; /* Add padding around the footer */
+    background-color: #f3f3f3; /* Light grey background */
+    font-size: 0.9rem; /* Slightly smaller text */
+    color: #000; /* Black text */
+}
+
+footer p {
+    margin: 0; /* Remove default margin from the paragraph */
+}
+
+footer a {
+    text-decoration: none; /* Remove underline from links */
+    color: #000; /* Black text */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
 }
