@@ -807,4 +807,54 @@ footer a:hover {
     display: block; /* Ensure quotes are on a new line */
     margin-top: 10px; /* Space above the quote */
 }
+/* Styles for the About Section Container */
+#about {
+    background-color: #499BD2; /* Blue background color */
+    padding: 40px 20px; /* Add padding around the section */
+    text-align: center; /* Center-align the heading and text */
+    color: #000; /* Black text for headings */
+}
+
+#about h3 {
+    font-size: 1.8rem; /* Adjust heading size */
+    font-weight: bold;
+    margin-bottom: 30px; /* Space below the heading */
+}
+
+/* Grid layout for icons and text */
+#about div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns */
+    gap: 20px; /* Space between items */
+    justify-content: center; /* Center the grid horizontally */
+    align-items: center; /* Vertically align items */
+}
+
+/* Individual section styling */
+#about section {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center-align items */
+    text-align: center;
+    padding: 10px; /* Add some padding inside each section */
+}
+
+#about section img {
+    width: 80px; /* Icon size */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space below the image */
+}
+
+#about section h4 {
+    font-size: 1.1rem; /* Heading size */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Make the text uppercase */
+    margin: 10px 0; /* Space around the heading */
+}
+
+#about section p {
+    font-size: 1rem; /* Text size */
+    color: #000; /* Black text for descriptions */
+    margin: 0; /* Remove default margin */
+}
 }
