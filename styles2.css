@@ -811,14 +811,14 @@ footer a:hover {
 #about {
     background-color: #499BD2; /* Blue background color */
     padding: 40px 20px; /* Add padding around the section */
-    text-align: center; /* Center-align the heading and text */
+    text-align: left; /* Center-align the heading and text */
     color: #000; /* Black text for headings */
 }
 
 #about h3 {
-    font-size: 1.8rem; /* Adjust heading size */
-    font-weight: bold;
+    font-size: 2rem; /* Adjust heading size */
     margin-bottom: 30px; /* Space below the heading */
+    margin-left: 20px; /* Space adding to the left margin */ 
 }
 
 /* Grid layout for icons and text */
