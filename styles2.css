@@ -744,4 +744,67 @@ footer a:hover {
     color: #000; /* Black text */
     margin: 0; /* Remove default margin */
 }
+/* Styles for Testimonials Section */
+#testimonials {
+    text-align: left; /* Center align text */
+    padding: 40px 20px; /* Add spacing around the section */
+}
+
+#testimonials h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px; /* Add space below the heading */
+    color: #333; /* Dark gray text for heading */
+}
+
+/* Grid layout for testimonials */
+#testimonials div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 40px; /* Space between grid items */
+    justify-content: center; /* Center grid content */
+    max-width: 600px; /* Limit the width */
+    margin: 0 auto; /* Center the grid */
+}
+
+/* Individual testimonial card */
+#testimonials section {
+    text-align: center; /* Center-align each testimonial */
+    padding: 20px; /* Add padding */
+}
+
+#testimonials section img {
+    width: 220px; /* Fixed size for images */
+    height: 220px; /* Maintain a consistent size */
+    object-fit: cover; /* Crop images if necessary */
+    border-radius: 50%; /* Circular images */
+    margin-bottom: 15px; /* Space below the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
+}
+
+/* Name styling */
+#testimonials section h4 {
+    font-size: 1.2rem;
+    text-transform: uppercase; /* makes the name appear in all uppercase letters */
+    font-weight: bold;
+    color: #000; /* Black text */
+    margin: 10px 0 5px; /* Add space around the name */
+}
+
+/* Location styling */
+#testimonials section p {
+    font-size: 1rem;
+    color: #555; /* Medium gray text */
+    margin: 0 0 10px; /* Add space below the location */
+    font-style: italic;
+}
+
+/* Quote styling */
+#testimonials section q {
+    font-size: 1rem;
+    color: #777; /* Lighter gray for quotes */
+    font-style: italic;
+    display: block; /* Ensure quotes are on a new line */
+    margin-top: 10px; /* Space above the quote */
+}
 }
