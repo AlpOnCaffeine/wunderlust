@@ -841,7 +841,7 @@ footer a:hover {
 
 #about section img {
     width: 80px; /* Icon size */
-    height: auto; /* Maintain aspect ratio */
+    height: 80px; /* Icon size to ensure it is sized evenly*/
     margin-bottom: 10px; /* Space below the image */
 }
 
