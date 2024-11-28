@@ -1158,8 +1158,60 @@ nav ul li a:hover {
 #intro p {
     margin-top: 40px;
     font-size: 1rem;
-    color: rgb(20, 19, 19);
+    color: rgb(33, 31, 31);
     letter-spacing: 1px;
 }
+/* Styles for the Plan section */
+#plan {
+    background-color: #F6D64A; /* Yellow background */
+    padding: 20px; /* Add some padding around the section */
+    text-align: center; /* Center-align text */
+}
 
+#plan h3 {
+    margin: 20px;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+#plan div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    gap: 20px; /* Space between boxes */
+    justify-items: center; /* Center content inside grid items */
+    align-items: center; /* aligns evenly*/
+    min-height: 300px; /* max the div a min of 300px */
+    width: auto; /* Ensures the height is responsive */
+}
+
+#plan section {
+    background-color: #55BCD5; /* Blue background for boxes */
+    border: white solid 3px;
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    height: 200px;
+    width: 200px; /* Set consistent width */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#plan section:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+#plan h4 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #000; /* Black text */
+}
+
+#plan img {
+    width: 130px; /* Set icon size */
+    height: 130px;
+    margin: 10px;
+}
 }
