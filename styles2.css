@@ -1021,110 +1021,145 @@ footer a:hover {
 }
 /* Ensure large screen-specific layout */
 @media (min-width: 1025px) {
-    header {
-        /*display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        padding: 20px;*/
-        display: grid;
-        grid-template-areas: 
-        "logo h1 nav"
-        "logo p nav";
-        grid-template-columns: auto 1fr auto;align-items: center;
-        padding: 10px;
-        gap: 10px;
-        background: linear-gradient(to bottom, #55BCD5, white); /* Gradient background */
-    }
-
-    /* Logo Styling */
-    #logo img {
-        /*width: 120px; 
-        height: auto; */
-        grid-area: logo;
-    }
-
-    /* Text Styling */
-    header h1 {
-        grid-area: h1;
-        font-size: 2rem;
-        font-weight: bold;
-        color: #000; /* Black text */
-        margin: 0;
-    }
-
-    header p {
-        grid-area: p;
-        font-size: 1rem;
-        color: #000;
-        margin: 0;
-    }
-
-    /* Navigation Menu Styling */
-    nav {
-        grid-area: nav;
-        justify-self: end;
-    }
-    /* hides the main nav and menu and checked box but leaves it available for the screen readers */
-    .sr-only {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        border: 0;
-    }
-    label[for="toggle"] {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        border: 0;
-    }
-    input[type="checkbox"]#toggle {
-        position: absolute;
-        opacity: 0;
-        width: 0;
-        height: 0;
-        pointer-events: none; /* Prevents any accidental interactions */
-    }
-
-    nav ul {
-        list-style: none;
-        display: flex;
-        gap: 10px; /* Space between menu items */
-        margin: 0;
-        padding: 0;
-    }
-    nav ul li {
-        margin: 0;
-    }
-    nav ul li a {
-        text-decoration: none;
-        color: #000; /* Black text */
-        text-transform: uppercase;
-        padding: 10px 20px;
-        background: #fff; /* White background */
-        border: 2px solid transparent;
-        border-radius: 5px;
-        transition: all 0.3s ease;
-    }
-    /* Active Link Styling */
-    nav ul li.active a {
-        background-color: #F6D64A; /* Yellow background for active link */
-        color: #000; /* Black text */
-    }
-    /* Hover Effect */
-    nav ul li a:hover {
-        border: 2px solid #F6D64A; /* Yellow border on hover */
-    }
-
+header {
+    display: grid;
+    grid-template-areas: 
+    "logo h1 nav"
+    "logo p nav";
+    grid-template-columns: auto 1fr auto;align-items: center;
+    padding: 10px;
+    gap: 10px;
+    background: linear-gradient(to bottom, #55BCD5, white); /* Gradient background */
 }
 
+/* Logo Styling */
+#logo img {
+    grid-area: logo;
+}
+
+/* Text Styling */
+header h1 {
+    grid-area: h1;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000; /* Black text */
+    margin: 0;
+}
+
+header p {
+    grid-area: p;
+    font-size: 1rem;
+    color: #000;
+    margin: 0;
+}
+
+/* Navigation Menu Styling */
+nav {
+    grid-area: nav;
+    justify-self: end;
+}
+/* hides the main nav and menu and checked box but leaves it available for the screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+label[for="toggle"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+input[type="checkbox"]#toggle {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none; /* Prevents any accidental interactions */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px; /* Space between menu items */
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    margin: 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #000; /* Black text */
+    text-transform: uppercase;
+    padding: 10px 20px;
+    background: #fff; /* White background */
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+/* Active Link Styling */
+nav ul li.active a {
+    background-color: #F6D64A; /* Yellow background for active link */
+    color: #000; /* Black text */
+}
+/* Hover Effect */
+nav ul li a:hover {
+    border: 2px solid #F6D64A; /* Yellow border on hover */
+}
+/* Styles for the intro section */
+#intro {
+    display: grid;
+    grid-template-areas:
+        "text images"
+        "text images";
+    grid-template-columns: 50% 50%; /* makes the columns take up half the width of the page */
+    gap: 20px; /* Space between the columns */
+    align-items: start;
+    margin: 20px; /* Add spacing around the section */
+}
+#intro h2,
+#intro p {
+    grid-area: text;
+}
+#img-grid {
+    grid-area: images;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for the first row */
+    grid-template-rows: auto auto; /* Auto height rows */
+    gap: 10px; /* Space between images */
+    margin: 20px;
+}
+
+#img-grid img,
+#img-grid picture img {
+    width: 100%;
+    height: auto;   
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+/* Make the third image span the entire second row */
+#img-grid picture {
+    grid-column: span 2; /* Span both columns */
+}
+#intro h2 {
+    font-size: 2rem;
+}
+#intro p {
+    margin-top: 40px;
+    font-size: 1rem;
+    color: rgb(20, 19, 19);
+    letter-spacing: 1px;
+}
+
+}
