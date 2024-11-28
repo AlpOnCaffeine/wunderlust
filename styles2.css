@@ -1267,5 +1267,214 @@ nav ul li a:hover {
     font-size: 0.9rem; /* Quote font size */
     color: #444; /* Slightly darker grey for the quote */
 }
+/* Styles for the About section */
+#about {
+    background-color: #499BD2; /* Blue background */
+    padding: 40px 20px; /* Add space around the section */
+    color: #fff; /* White text for the section */
+}
+
+#about h3 {
+    font-size: 1.5rem; /* Large heading font size */
+    margin: 30px; 
+    color: #000; /* Black heading for contrast */
+    text-align: left;
+}
+
+#about div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four equal columns for the icons */
+    justify-items: center; /* Center-align items within each column */
+}
+
+#about section {
+    text-align: center; /* Center-align text inside each column */
+    max-width: 200px; /* Restrict the width of each column */
+}
+
+#about img {
+    width: 120px; /* Set icon size */
+    height: 120px;
+    margin-bottom: 5px; /* Space below the icon */
+}
+
+#about h4 {
+    font-size: 1.3rem; /* Subheading font size */
+    margin: 5px;
+    text-transform: uppercase;
+    color: #000; /* Black text for subheadings */
+}
+
+#about p {
+    font-size: 0.9rem; /* Description text font size */
+    margin: 0;
+    color: #333; /* Dark grey for description text */
+    text-align: left;
+}
+/* Styles for contact section */ 
+#contact {
+    padding: 40px; /* Add space around the section */
+    background-color: #fff; /* White background */
+}
+
+#contact h3 {
+    font-size: 2rem; /* Larger heading font size */
+    margin-bottom: 20px;
+    color: #000; /* Black text for the heading */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#contact .form-required {
+    font-size: 0.9rem;
+    color: #0b0b0b; 
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Two-column grid layout */
+    gap: 20px; /* Space between fields */
+    align-items: center;
+}
+
+form div,
+form fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between label and input */
+    max-width: 280px;
+}
+
+form label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #000; /* Black text for labels */
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #9B26B0; /* Purple border */
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="tel"]:focus,
+form select:focus {
+    outline: none;
+    border-color: #000; /* Black border on focus */
+}
+
+.custom-select {
+    position: relative;
+}
+
+.custom-select select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: none;
+}
+
+.custom-select::after {
+    content: "▼";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 1rem;
+    color: #9B26B0;
+}
+
+fieldset {
+    display: flex; /* Make the fieldset a flex container */
+    flex-wrap: nowrap; /* Prevent the options from wrapping to a new line */
+    justify-content: space-between; /* Spread out the radio options */
+    align-items: center; /* Align the items vertically in the center */
+    gap: 20px; /* Add spacing between the options */
+    border: none; /* Remove the default fieldset border */
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.radio-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.radio-input input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: 2px solid #9B26B0; /* Purple border */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+}
+
+.radio-input input[type="radio"]:checked {
+    background-color: #9B26B0; /* Purple fill when checked */
+}
+
+.radio-input span.radio-label {
+    font-size: 0.9rem;
+    color: #000;
+}
+
+input[type="submit"] {
+    grid-column: span 2; /* Full-width button */
+    padding: 15px;
+    background-color: #9B26B0; /* Purple background */
+    color: #fff; /* White text */
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #800090; /* Darker purple on hover */
+}
+/* Styles for the Footer */
+footer {
+    display: flex;
+    justify-content: space-between; /* Evenly space out the items */
+    align-items: center; /* Vertically center the items */
+    padding: 10px 20px; /* Add some space inside the footer */
+    background-color: #f0f0f0; /* Light grey background */
+    font-size: 0.9rem; /* Slightly smaller text */
+    color: #333; /* Dark grey text */
+}
+
+footer a {
+    color: #333; /* Dark grey links */
+    text-decoration: none; /* Remove underline */
+    margin-left: 20px; /* Add space between links */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
 
 }
