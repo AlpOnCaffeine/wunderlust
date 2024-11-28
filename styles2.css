@@ -1214,4 +1214,58 @@ nav ul li a:hover {
     height: 130px;
     margin: 10px;
 }
+/* Styles for the testimonials section */
+#testimonials {
+    text-align: center; /* Center the heading and content */
+    padding: 40px; /* Add space around the section */
+    background-color: #fff; /* Optional: set a white background */
+}
+
+#testimonials h3 {
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 30px; 
+}
+
+#testimonials div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns for the testimonials */
+    gap: 20px; /* Space between items */
+    justify-items: center; /* Center each testimonial block */
+    align-items: start; /* Align content to the top */
+}
+
+#testimonials section {
+    text-align: center; /* Center text inside each testimonial */
+    max-width: 200px; /* Restrict the width of each testimonial */
+}
+
+#testimonials img {
+    width: 120px; /* Circle image size */
+    height: 120px;
+    border-radius: 50%; /* Make the images circular */
+    margin-bottom: 15px; /* Space below the image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Add subtle shadow */
+}
+
+#testimonials h4 {
+    font-size: 1rem; /* Name font size */
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: #000; /* Black text for the name */
+}
+
+#testimonials p {
+    font-size: 0.9rem; /* Location font size */
+    margin: 0;
+    color: #444; /* Subtle grey color for the location */
+}
+
+#testimonials q {
+    display: block; /* Block style for the quote */
+    font-size: 0.9rem; /* Quote font size */
+    color: #444; /* Slightly darker grey for the quote */
+}
+
 }
